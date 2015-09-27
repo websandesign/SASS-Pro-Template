@@ -1,6 +1,26 @@
 /* Modules and Mixins */
 
-// MODULES
+/* EXTERNAL MODULES */
+
+/* slick */
+@import '../lib/slick/_slick.scss';
+@import '../lib/slick/_slick-theme.scss';
+
+/* owl-carousel */
+@import '../lib/owl-carousel/_owl.carousel.scss';
+@import '../lib/owl-carousel/_owl.theme.scss';
+
+/*fancy-box*/
+@import '../lib/fancybox/_jquery.fancybox.scss';
+
+
+
+
+
+
+//--------------------------------------------------------------------------
+
+/* MY MODULES */
 
 /*wp_page_navi*/
 .wp-pagenavi {
@@ -19,10 +39,15 @@
 
 
 
+
+
 //--------------------------------------------------------------------------
-// MIXINS 
+// MIXINS & EXTENDED
 //@extend %clr_btn;
 //@include placeholder(14px,normal,#ccc); 
+
+
+//@EXTEND
 
 /*clear_btn*/
 %clr_btn {
@@ -38,6 +63,12 @@
 %material_sh {
    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.2);
 }
+
+
+
+
+
+//@INCLUDE
 
 /*placeholder CSS*/
 @mixin placeholder($font-size, $font-weight, $color) {

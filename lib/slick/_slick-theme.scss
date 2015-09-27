@@ -2,11 +2,13 @@
 
 // Default Variables
 
-$slick-font-path: "./fonts/" !default;
+$full_path: 'lib/slick';
+
+$slick-font-path: "#{$full_path}/fonts/" !default;
 $slick-font-family: "slick" !default;
-$slick-loader-path: "./" !default;
-$slick-arrow-color: white !default;
-$slick-dot-color: black !default;
+$slick-loader-path: "#{$full_path}/" !default;
+$slick-arrow-color: $brand-primary !default;
+$slick-dot-color: $brand-primary !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "←" !default;
 $slick-next-character: "→" !default;
@@ -38,7 +40,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
     .slick-loading & {
-        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+        background: #fff slick-image-url("#{$full_path}/ajax-loader.gif") center center no-repeat;
     }
 }
 
@@ -51,6 +53,9 @@ $slick-opacity-not-active: 0.25 !default;
         font-weight: normal;
         font-style: normal;
     }
+}
+.slick-slide {
+    outline: none;
 }
 
 /* Arrows */
@@ -66,7 +71,7 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
+    top: 0;
     margin-top: -10px;
     padding: 0;
     border: none;
@@ -95,7 +100,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    right: 25px;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -109,7 +114,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 0px;
     [dir="rtl"] & {
         left: -25px;
         right: auto;

@@ -3,6 +3,8 @@
 *	v1.3.3
 */
 
+$full_path: 'lib/owl-carousel';
+
 .owl-theme .owl-controls{
 	margin-top: 10px;
 	text-align: center;
@@ -27,7 +29,7 @@
 	/*-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;*/
-	background: #4288E1;
+    background: $brand-primary;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.7;
 }
@@ -56,7 +58,7 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: #4288E1;
+    background: $brand-primary;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
@@ -81,5 +83,5 @@
 /* preloading images */
 .owl-item.loading{
 	min-height: 150px;
-	background: url(AjaxLoader.gif) no-repeat center center
+    background: url(#{$full_path}/AjaxLoader.gif) no-repeat center center
 }

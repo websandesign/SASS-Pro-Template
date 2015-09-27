@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
-	//<a class="fancybox"><img src="image.jpg" /></a>
+    //<a href="image.jpg" class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
 	$(".fancybox").fancybox();
     
@@ -32,9 +32,9 @@ $(document).ready(function() {
     itemsTablet: [768,2],
     itemsTabletSmall: false,
     itemsMobile : [479,1],
-    singleItem : false,
+    singleItem : true, // SINGLE!!!
     itemsScaleUp : false,
-    autoPlay: true,
+    autoPlay: false,
 
     // Navigation
     navigation : true,

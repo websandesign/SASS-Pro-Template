@@ -3,6 +3,8 @@
  *	v1.3.3
  */
 
+$full_path: 'lib/owl-carousel';
+
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
 	content: ".";
@@ -55,7 +57,7 @@
 
 /* mouse grab icon */
 .grabbing { 
-    cursor:url(grabbing.png) 8 8, move;
+    cursor:url(#{$full_path}/grabbing.png) 8 8, move;
 }
 
 /* fix */
