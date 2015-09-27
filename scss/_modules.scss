@@ -1,0 +1,64 @@
+/* Modules and Mixins */
+
+// MODULES
+
+/*wp_page_navi*/
+.wp-pagenavi {
+    text-align: center;
+    margin-top: 40px;
+    a, span {
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+    span.current {
+        background-color: $brand-primary;
+        color: #FFF;
+    }
+}
+
+
+
+
+//--------------------------------------------------------------------------
+// MIXINS 
+//@extend %clr_btn;
+//@include placeholder(14px,normal,#ccc); 
+
+/*clear_btn*/
+%clr_btn {
+    border: none;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+/*material shadow*/
+%material_sh {
+   box-shadow: 0 2px 7px 0 rgba(0,0,0,0.2);
+}
+
+/*placeholder CSS*/
+@mixin placeholder($font-size, $font-weight, $color) {
+    ::-webkit-input-placeholder {
+        font-size: $font-size;
+        font-weight: $font-weight;
+        color: $color;
+    }
+    ::-moz-placeholder {
+        font-size: $font-size;
+        font-weight: $font-weight;
+        color: $color;
+    }
+    :-moz-placeholder {
+        font-size: $font-size;
+        font-weight: $font-weight;
+        color: $color;
+    }
+    :-ms-input-placeholder {
+        font-size: $font-size;
+        font-weight: $font-weight;
+        color: $color;
+    }
+}

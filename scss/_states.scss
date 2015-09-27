@@ -1,0 +1,28 @@
+/* STATES */
+
+/*wp_img_align*/
+img.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+img.alignright {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+img.aligncenter {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/*wp_current_menu_item*/
+.current-menu-item {
+    
+}
+
+/*wp_current_menu_in_sidebar*/
+.current-page-ancestor {
+    
+}
