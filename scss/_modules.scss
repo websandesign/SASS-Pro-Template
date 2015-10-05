@@ -13,6 +13,19 @@
 /*fancy-box*/
 @import '../lib/fancybox/_jquery.fancybox.scss';
 
+/*magnific-popup*/
+@import '../lib/magnific/main.scss';
+
+/*magnific popup css*/
+.mfp-content {
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
 
 
 

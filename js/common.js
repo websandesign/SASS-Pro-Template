@@ -18,7 +18,16 @@ $(document).ready(function() {
 	//Документация: http://fancybox.net/howto
     //<a href="image.jpg" class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
+    $(".fancybox").fancybox();
+    
+    //Magnific PopUp
+    //Документация: http://dimsemenov.com/plugins/magnific-popup/documentation.html
+    //<a href="#target" class="_target">Открыть форму</a>
+    // class="mfp-hide" для первоначального скрытия контента на странице
+    $('._target').magnificPopup({
+        type: 'inline'
+    });
+
     
 
     //OWL Carousel
